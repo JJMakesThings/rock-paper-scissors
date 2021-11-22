@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="./static/styles.css">
-    <script src="./static/game.js"></script>
+    <script src="./static/game.js" defer></script>
 </head>
 <body>
-    
+    <h1>Welcome to the table</h1>
+    <h2 id="round">Round 1</h2>
+    <div id="table">
+        <div id="table__player">
+            <h2>Choose your utensile</h2>
+            <button class="utensile">Rock</button>
+            <button class="utensile">Paper</button>
+            <button class="utensile">Scissors</button>
+        </div>
+        <div id="table__computer">
+            <h2>Computer-o chooses...</h2>
+            <img>
+        </div>
+    </div>
+    <h2 id="computer-choice"></h2>
+    <h2 id="score">Score</h2>
+    <h3>Best 3 of 5 wins!</h3>
+        <ul>
+            <li id="human-score">You: 0</li>
+            <li id="computer-score">Computer-o: 0</li>
+        </ul>
 </body>
 </html>
